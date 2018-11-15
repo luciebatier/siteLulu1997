@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 	
+ 	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name "viewport" content="width=device-width, initial-scale=1">
+
+  <link href = "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet"  href="css/style.css">
+  <title> Mon site internet</title>
+
+  <link rel ="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  
+
+  <link rel ="stylesheet" href ="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+<!-- script pour smooth scroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+<!-- script pour smooth scroll -->
+
+  </head>
+
+  <body>
+
+<!-- haut de page -->
+
+<div id= "my-header">
+
+       <div id="lienetlogo">
+
+        <div class="logo">
+  <img src="img/panier_de_fruit.png" alt="produit1" width="40" id="logo">
+        </div>
+
+        <div class="liens">
+          <ul class = "list-inline">
+
+          <li><a href="#my-header"> <strong>Menu</strong> </a></li>
+          <li><a href="#container"> <strong>Products</strong> </a></li>
+          <li><a href="#Subscribe-newsletter"> <strong>Neswletter</strong> </a></li>
+
+          </ul>
+        </div>
+        </div>
+
+        <div id="Bienvenue">
+          <h1><strong>Venez dénicher des produits de saison ( meme à Paris) !</strong></h1>
+          <p><strong>Les bons plans de FruitandCo</strong></p>
+
+          <style> 
+
+               #promptCompat{ 
+                        display: none; 
+                } 
+                #promptCompat.no_dialog{ 
+                        box-shadow: 0 0 5px 2px red; 
+                        padding: 10px; 
+                        display: block; 
+                        text-align: center; 
+                        font-weight: bold; 
+                } 
+
+                dialog{ 
+                        border-radius: 10px; 
+                        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); 
+                } 
+                dialog::backdrop{ 
+                        background-color: rgba(0, 0, 0, 0.6);
+                } 
+        </style> 
+</head> 
+<body> 
+  <dialog id="mydialog"> 
+    <h2>Fenêtre Modale avec Display form</h2>
+    <p> Identifiez vous </p> 
+    <form>
+        identifiant:<br>
+        <input type="text" name="firstname"><br>
+        mot de passe:<br>
+        <input type="text" name="lastname">
+    </form>
+    <img src="img/banane.gif" align="center">
+       <div class="boutons"><button onclick="$dialog.close()">Fermer</button>&nbsp;
+       </div> 
+  </dialog> 
+
+  <div class="boutons btn-lg"><button onclick="$dialog.showModal()">CTA</button></div> 
+  <script> 
+                var $dialog = document.getElementById('mydialog'); 
+                if(!('show' in $dialog)){ 
+                        document.getElementById('promptCompat').className = 'no_dialog'; 
+                } 
+                $dialog.addEventListener('close', function() { 
+                        console.log('Fermeture. ', this.returnValue); 
+                }); 
+        </script> 
+        </div>
+</div>
+
+      <nav class="menu-nav">
+        <ul>
+          <li class="bouton-nav btn-primary">
+            <a href="#">
+              Accueil
+            </a>
+          </li>
+
+          <li class="bouton-nav btn-primary">
+            <a href="collection.html">
+              Producteurs
+          </a>
+          </li>
+
+          <li class="bouton-nav btn-primary">
+            <a href="contact.html">
+              Contact 
+            </a>  
+          </li>
+        </ul>
+      </nav>
+</div>
+ 
+<div class="container" id="container"></div>
+  <div class ="row">
+      <div class= "col-xs-12 col-sm-6 col-md-3">
+
+        <div class = "feature text-center">
+        <h2>Ananas</h2>
+        <img src="img/ananas.png" alt="produit1" width="100" class ="produit">
+        <h3>Ananas de la Réunion</h3>
+        <p> <strong>exotique</strong> très riche en vitamine C </p>
+        </div>
+      </div>
+
+      <div class= "col-xs-12 col-sm-6 col-md-3">
+
+        <div class = "feature text-center">
+        <h2>Raisin</h2>
+        <img src="img/raisin.png" alt="produit2" width="100"class ="produit">
+        <h3>Raisins du Lot</h3>
+        <p> <strong>Traditionnel </strong> raisin noir,rosé ou blanc </p>
+        </div>
+      </div>
+
+      <div class= "col-xs-12 col-sm-6 col-md-3">
+        <div class = "feature text-center">
+        <h2>Cerise</h2>
+        <img src="img/cerise.png" alt="produit3" width="100"class ="produit">
+        <h3>Cerises du Vaucluse</h3>
+        <p> <strong> un gout incomparable</strong> cerises du mont de venasques</p>
+        </div>
+      </div>
+
+      <div class= "col-xs-12 col-sm-6 col-md-3">
+        <div class = "feature text-center">
+        <h2>Pomme</h2>
+        <img src="img/pomme.png" alt="produit3" width="100"class ="produit">
+        <h3>Pommes de Bretagne</h3>
+        <p> <strong> Sucrées et juteuses</strong> pommes bénédictin</p>
+        </div>
+      </div>
+      </div>
+</div>
+
+
+
+  	  <!-- contenu sous forme de boite -->
+  <div id="content">
+  	  	<div class="leftbox">
+  	  		<h1>
+  	  			Mangez ce qui vous fait plaisir
+  	  		</h1>
+  	  	  <div class="annonce">  	 
+  	  		<p>
+  	  			Fruits
+  	  		</p> 			
+  	  		</div>
+
+  	  		<div class="annonce">  
+  	  		<p>
+  	  			Légumes
+  	  		</p>	  			
+  	  		</div>
+
+  	  		<div class="annonce">
+  	  		<p>
+  	  			volailles
+  	  		</p>  	  			
+  	  		</div>
+  	  		
+  	  			
+  	  	</div>
+  	  		
+
+  	  	<div class="rightbox">
+  	  		<h1> Conseils et astuces en vidéo</h1>
+  	  		<iframe width="400" height="400" src="https://media.giphy.com/media/BrFTdYQmMXduw/giphy.gif"></iframe>
+  	   </div>	  	
+  </div>
+
+  <div id="Subscribe-newsletter">
+  <h3>Subscribe to the newsletter</h3>
+  <p> Enter your email below to subscribe for the newsletter </p>
+  </div>
+
+
+  <div id="formulaire">
+    <div class = "saisiremail">
+      <form>
+      
+        <textarea name="enteremail" rows=1 cols=40 wrap=virtual>Saisir son email</textarea>
+      
+      </form>
+    </div>
+
+
+      <button class = "buttonemail" type="button"> Subscribe</button> 
+ </div>
+ 	  <!-- pied de page -->
+
+  <div id="my-footer">
+      <div class ="reseauxsociaux">
+ 	  	  
+        <ul class = "list-inline">
+          <li><a href="https://www.facebook.com/" onclick="window.open(this.href); return false;"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com" onclick="window.open(this.href); return false;"><i class="fa fa-twitter" ></i></a></li>
+          <li><a href="https://www.instagram.com/?hl=fr" onclick="window.open(this.href); return false;"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.pinterest.fr/" onclick="window.open(this.href); return false;"><i class="fa fa-pinterest"></i></a></li>
+          <li>Tous droits réservés -  lucie's copyright &copy;</li>
+        </ul> 
+
+      
+      </div>
+
+      <div class= "retourmenu">
+          <ul class ="list-inline">
+            <li><a href="#my-header"> <strong>Menu</strong> </a></li>
+            <li><a href="#container"> <strong>Products </strong></a></li>
+            <li><a href="#Subscribe-newsletter"> <strong>Neswletter </strong></a></li>
+          </ul>
+      </div>
+  </div>
+    
+<!--script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html> 
+<html> 
+<head> 
+  <meta charset="utf-8" /> 
+   <style> 
+
+               #promptCompat{ 
+                        display: none; 
+                } 
+
+                #promptCompat.no_dialog{ 
+                        box-shadow: 0 0 5px 2px red; 
+                        padding: 10px; 
+                        display: block; 
+                        text-align: center; 
+                        font-weight: bold; 
+                } 
+                .boutons{ 
+                        padding: 10px; 
+                } 
+
+                dialog{ 
+                        border-radius: 10px; 
+                        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); 
+                } 
+                dialog::backdrop{ 
+                        background-color: rgba(0, 0, 0, 0.6); 
+                } 
+        </style> 
+</head> 
+<body> 
+  <dialog id="mydialog"> 
+    Fenêtre Modale avec un display form
+    <p> a remplir </p> 
+       <div class="boutons"><button onclick="$dialog.close()">Fermer</button>&nbsp;
+       </div> 
+  </dialog> 
+  <div class="boutons"><button onclick="$dialog.showModal()">Ouvrir en mode modal</button></div> 
+  <script> 
+                var $dialog = document.getElementById('mydialog'); 
+                if(!('show' in $dialog)){ 
+                        document.getElementById('promptCompat').className = 'no_dialog'; 
+                } 
+                $dialog.addEventListener('close', function() { 
+                        console.log('Fermeture. ', this.returnValue); 
+                }); 
+        </script> 
+</body> 
+</html>

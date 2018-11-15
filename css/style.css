@@ -1,0 +1,171 @@
+
+header{
+	background-color: #white;
+	width: 100%;
+	height: 100px;
+	}
+
+body{
+	overflow-x: hidden;
+	margin:0;
+}
+footer{
+	
+  background-color: #FF7F50;
+}
+
+p{
+	font-size: 30;
+}
+
+
+
+
+#my-header{
+background: url("https://i.ytimg.com/vi/TvA1dXVQsxA/maxresdefault.jpg");
+}
+
+#lienetlogo div{
+	display: inline-block;
+	width: 48%;
+}
+
+
+.logo{
+	border-radius: 50%;
+	text-align: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	}
+.logo img {
+	border : 2px solid black;
+	margin: 2px;
+	border-radius: 50%;
+}
+.liens {
+	text-align: right;
+	
+	font-size: 15px;
+}
+
+.liens a{
+	color:black;
+}
+#Bienvenue {
+padding-top:100px;
+padding-bottom:200px;
+color :#272C49;
+text-align: center;
+}
+
+.menu {
+	text-align: center;
+	margin-top:5px;
+}
+.feature{
+	padding : 10px;
+	font-weight : 300;
+}
+.feature img {
+	padding : 20px;
+	border-radius: 40%;
+	border : 2px solid white;
+}
+
+
+div#content div.annonce{
+	background-color: #008080;
+	width: 100%;
+	margin: 9px;
+
+}
+div#content{
+	background-color: #FFF8DC;
+}
+div#content div{
+	display: inline-block;
+	width: 48%;
+	}
+div#content div h1, p,iframe{
+	margin: 35px;
+}
+div#content div.leftbox{
+	background-color: #DCDCDC;
+	vertical-align: top;
+}
+div#content div.rightbox{
+	background-color: #D19275;
+	
+}
+.menu-nav {
+	text-align: center;
+	padding: 20px
+}
+nav.menu-nav ul li.bouton-nav{
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+}
+
+nav.menu-nav ul li.bouton-nav a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
+	font-size : 20px;
+
+}
+
+nav.menu-nav ul li.bouton-nav:hover a{
+	color:green;
+	background-color: #white;
+	transition: 0.3s all;
+}
+
+#Subscribe-newsletter {
+text-align: center;
+padding-top:20px;
+padding-bottom:2 0px;
+color :black;
+}
+#formulaire{
+	text-align: center;
+}
+
+}
+#my-footer{
+	background-color: orange;
+}
+#my-footer div{
+	display: inline-block;
+	width: 48%;
+	padding-top:30px;
+}
+
+
+.reseauxsociaux{
+background-color:  : #E6BC8D;
+color : grey;
+margin-left: 5px;
+margin-bottom: 5px;
+text-align: left;
+
+}
+.reseauxsociaux a {
+	color :lightgrey;
+	font-size:15px;
+}
+.reseauxsociaux a:hover {
+	color : white;
+}
+
+.retourmenu {
+	text-align: right;
+	font-size: 15px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.retourmenu a{
+	color:black;
+}
